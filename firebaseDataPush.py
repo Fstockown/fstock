@@ -67,17 +67,17 @@ def get_dataLive(api):
 
 api_list = {
     "sensex":"https://in.finance.yahoo.com/quote/%5EBSESN?p=%5EBSESN",
-    "nifty50":"https://in.finance.yahoo.com/quote/%5ENSEI?p=%5ENSEI"
-    "bitcoin":"https://in.finance.yahoo.com/quote/BTC-INR?p=BTC-INR"
-    "dogecoin":"https://in.finance.yahoo.com/quote/DOGE-INR?p=DOGE-INR"
-    "SBI":"https://in.finance.yahoo.com/quote/SBIN.NS?p=SBIN.NS&.tsrc=fin-srch"
-    "HDFC":"https://in.finance.yahoo.com/quote/HDFCBANK.NS?p=HDFCBANK.NS&.tsrc=fin-srch"
-    "relience":"https://in.finance.yahoo.com/quote/RELIANCE.NS?p=RELIANCE.NS&.tsrc=fin-srch"
-    "tesla,inc":"https://in.finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch"
-    "facebook,inc":"https://in.finance.yahoo.com/quote/FB?p=FB&.tsrc=fin-srch"
-    "amazon,inc":"https://in.finance.yahoo.com/quote/AMZN?p=AMZN&.tsrc=fin-srch"
-    "tata_motors":"https://in.finance.yahoo.com/quote/TTM?p=TTM&.tsrc=fin-srch"
-    "tata_steel_limited":"https://in.finance.yahoo.com/quote/TATASTEEL.NS?p=TATASTEEL.NS&.tsrc=fin-srch"
+    "nifty50":"https://in.finance.yahoo.com/quote/%5ENSEI?p=%5ENSEI",
+    "bitcoin":"https://in.finance.yahoo.com/quote/BTC-INR?p=BTC-INR",
+    "dogecoin":"https://in.finance.yahoo.com/quote/DOGE-INR?p=DOGE-INR",
+    "SBI":"https://in.finance.yahoo.com/quote/SBIN.NS?p=SBIN.NS&.tsrc=fin-srch",
+    "HDFC":"https://in.finance.yahoo.com/quote/HDFCBANK.NS?p=HDFCBANK.NS&.tsrc=fin-srch",
+    "relience":"https://in.finance.yahoo.com/quote/RELIANCE.NS?p=RELIANCE.NS&.tsrc=fin-srch",
+    "tesla,inc":"https://in.finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch",
+    "facebook,inc":"https://in.finance.yahoo.com/quote/FB?p=FB&.tsrc=fin-srch",
+    "amazon,inc":"https://in.finance.yahoo.com/quote/AMZN?p=AMZN&.tsrc=fin-srch",
+    "tata_motors":"https://in.finance.yahoo.com/quote/TTM?p=TTM&.tsrc=fin-srch",
+    "tata_steel_limited":"https://in.finance.yahoo.com/quote/TATASTEEL.NS?p=TATASTEEL.NS&.tsrc=fin-srch",
 }
 
 while True:
