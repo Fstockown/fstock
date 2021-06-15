@@ -53,3 +53,41 @@ from bs4 import BeautifulSoup
 # print(data("https://in.finance.yahoo.com/quote/%5EBSESN?p=%5EBSESN&.tsrc=fin-srch"))
 
 
+# de = {"aman":"79","suman":"120"}
+# for i in de:
+#         print(i,de[i])
+
+
+
+
+
+# #function to convert string into int or float 
+# def con(data):
+#         inte=str()
+#         datali = list(data)
+#         for i in datali:
+#                 if i != ",":
+#                         inte = inte+i
+#         result = float(inte)
+#         return result
+# print(type(con("52,23,45.09")))
+import pyrebase               
+                        
+
+config ={
+  "apiKey": "AIzaSyCY1CKDsoF4frwE9hDv0Cvybc559hUrb70",
+  "authDomain": "fstock-9ced2.firebaseapp.com",
+  "databaseURL": "https://fstock-9ced2-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "projectId": "fstock-9ced2",
+  "storageBucket": "fstock-9ced2.appspot.com",
+  "messagingSenderId": "956197289236",
+  "appId": "1:956197289236:web:649d4a76569d3341435601",
+  "measurementId": "G-HZ7Z7R2HLG"
+}
+
+
+firebase = pyrebase.initialize_app(config)
+db = firebase.database()
+data = {"name": "Mortimer 'Morty' Smith"}
+
+db.child("users").push(data)
