@@ -71,8 +71,41 @@ from bs4 import BeautifulSoup
 #         result = float(inte)
 #         return result
 # print(type(con("52,23,45.09")))
-import pyrebase               
+
+
+
+# import pyrebase               
                         
+
+# config ={
+#   "apiKey": "AIzaSyCY1CKDsoF4frwE9hDv0Cvybc559hUrb70",
+#   "authDomain": "fstock-9ced2.firebaseapp.com",
+#   "databaseURL": "https://fstock-9ced2-default-rtdb.asia-southeast1.firebasedatabase.app",
+#   "projectId": "fstock-9ced2",
+#   "storageBucket": "fstock-9ced2.appspot.com",
+#   "messagingSenderId": "956197289236",
+#   "appId": "1:956197289236:web:649d4a76569d3341435601",
+#   "measurementId": "G-HZ7Z7R2HLG"
+# }
+
+
+# firebase = pyrebase.initialize_app(config)
+# db = firebase.database()
+# data = {"name": "Mortimer 'Morty' Smith"}
+
+# db.child("users").push(data)
+
+
+
+
+
+
+
+
+
+import pyrebase
+from datetime import datetime
+
 
 config ={
   "apiKey": "AIzaSyCY1CKDsoF4frwE9hDv0Cvybc559hUrb70",
@@ -84,10 +117,13 @@ config ={
   "appId": "1:956197289236:web:649d4a76569d3341435601",
   "measurementId": "G-HZ7Z7R2HLG"
 }
-
-
+# initilizing pyrebase
 firebase = pyrebase.initialize_app(config)
-db = firebase.database()
-data = {"name": "Mortimer 'Morty' Smith"}
 
-db.child("users").push(data)
+db = firebase.database()
+
+db.child("stock").child("nifty50").child(str(datetime.now().date())).set({"min":"23.67567","max":"23.089"})
+x = db.child("stock").child("nifty50").child(str(datetime.now().date())).get().val()["min"]
+print(float(x))
+
+print(datetime.now().date())
