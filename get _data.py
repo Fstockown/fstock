@@ -108,4 +108,4 @@ while True:
                     min =data['min']
                     max = data['max']
                     current = data['current']
-                    print(f"{stockli[op-1]} min:{min} max:{max} current:{current}")
+                    print(f"{stocknameli[op-1]} min:{min} max:{max} current:{current}")
